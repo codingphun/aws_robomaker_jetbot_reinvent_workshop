@@ -50,7 +50,7 @@
 1. In RoboMaker IDE menu, click Run, Launch Simulation, JetBot Teleop Simulation - This will launch the application in simulation enviornment where you can drive the Jetbot with the teleop client app. When simulation status displays (running), explore the enviornment in Gazebo by clicking on the Simulation menu, Applications, Gazebo. Use your mouse scroll wheel to zoom in and out of the enviornment. Be sure to continue with the following steps to download the joy stick client application to remote control the JetBot.
 
 1. Locate the teleop.zip file in **jetbot/assets/teleop** folder 
-![teleop app](assets/images/teleop-app.png)
+1. ![teleop app](assets/images/teleop-app.png)
 
 1. Download the zip file in the file explorer and unzip it on the desktop
 1. Open the robogui.html file in a browser and make sure the connection status states Connected
