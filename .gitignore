@@ -1,0 +1,9 @@
+**/build
+**/bundle
+**/install
+**/log
+.DS_Store
+certificate.pem.crt
+private.pem.key
+public.pem.key
+root.ca.pem
