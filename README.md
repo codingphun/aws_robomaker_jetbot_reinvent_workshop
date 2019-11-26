@@ -1,5 +1,11 @@
 ## Building a Robot Application with RoboMaker
 
+## Log in to AWS Console
+1. Browse to https://dashboard.eventengine.run/login, enter your assigned team hash and click "Accept Terms & Login"
+1. Click on "AWS Console" then "Open AWS Console"
+![EE Team Dashboard](https://robomakerworkshops.com/images/ee-team-dashboard.png)
+![EE AWS Console](https://robomakerworkshops.com/images/ee-open-console.png)
+
 ## Create RoboMaker Notebook
 1. In the AWS RoboMaker console, select “Development environments” in the left panel and choose “Create environment”.
 1. Give the environment a name, for example, RoboMaker-JetBot, select “m4.xlarge” as Instance type and choose “Create”. Any instance type can be used, however for this tutorial we recommend using an m4.xlarge instance. You can use the default VPC and subnets for this tutorial. 
@@ -63,7 +69,7 @@
 ### Build, Bundle and Deploy Robot Application in ARM64 Architecture [~20 mins]
 1. Open the RoboMaker IDE and navigate to the terminal
 
-1. Change to the **jetbot** directory and build & bundle the ROS application in a docker container
+1. Change to the **jetbot** directory and build & bundle the ROS application in a docker container. **IMPORTANT: Make sure you are in the jetbot directory** Also, if you see a permission denied error in container shell, it is safe to ignore and continue
     ```
     # Make sure you are in the jetbot directory
     $ cd ~/environment/jetbot
