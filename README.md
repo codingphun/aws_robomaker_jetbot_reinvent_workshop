@@ -42,6 +42,8 @@
 
 1. Make sure the Colcon Bundle tab displays "Process exited with code: 0". This indicates the build and bundle process has completed.
 
+![Simulation menu](assets/images/simulation-menu.png)
+
 1. Click Run, Launch Simulation, JetBot Circle Simulation - This will launch the application in simulation enviornment with the Jetbot rotating in circles. 
 2. When simulation status displays (running), explore the enviornment in Gazebo by clicking on the Simulation menu, Applications, Gazebo. Use your mouse scroll wheel to zoom in and out of the enviornment. This simple application demonstrates that you have all the components configured and installed correctly. Now you can move on to the next simulation, teleop, which allows you to remote control the JetBot. 
 
@@ -78,7 +80,7 @@
     #Type exit or Ctrl-D, to exit the container
     (docker)$ exit
     ```
-1. Open roboMakerSettings.json file located in root folder of the RoboMaker IDE. Look for s3Bucket and write down the name of the bucket, it will look similar to mod-47118164636e49dc-s3bucket-1t252d6l3fmil, you will need this for next step to upload the compiled and bundled ARM64 ROS application. Also find and write down the value in IOT_ENDPOINT, you will need it when deploying the application to the JetBot.
+1. Open roboMakerSettings.json file located in the root folder under RoboMaker IDE folder pane. Look for s3Bucket and write down the name of the bucket, it will look similar to mod-47118164636e49dc-s3bucket-1t252d6l3fmil, you will need this for next step to upload the compiled and bundled ARM64 ROS application. Also find and write down the value in IOT_ENDPOINT, you will need it when deploying the application to the JetBot.
 ![S3 and IoT Endpoint](assets/images/s3-iot-endpoint.png)
 
 1. Back in the RoboMaker IDE and navigate to the terminal. Make sure you exited out of the container in previous step
