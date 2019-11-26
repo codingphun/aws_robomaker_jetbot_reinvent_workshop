@@ -238,6 +238,8 @@ An AWS RoboMake robot is also a Greengrass core. Core devices use certificates a
                       
 1. Specify a Robot deployment timeout. Deployment to an individual robot will stop if it does not complete before the amount of time specified.
 
+![JetBot Deployment](assets/images/jetbot-deployment.png)
+
 1. Click Create to create the deployment job.
 1. Keep track of the progress of the deployment, when copying and extracting completes, the status will change to **Launching**.  
 
