@@ -5,7 +5,7 @@
 1. Give the environment a name, for example, RoboMaker-JetBot, select “m4.xlarge” as Instance type and choose “Create”. Any instance type can be used, however for this tutorial we recommend using an m4.xlarge instance. You can use the default VPC and subnets for this tutorial. 
 1. Choose “Open environment”. It may take a few minutes for your environment to start the first time. When the creation process has completed, you will see something similar to this:
 
-![Cloud9 development environment welcome view](https://robomakerworkshops.com/images/1_cloud9.png)
+![Cloud9 IDE layout](https://robomakerworkshops.com/images/1_c9_layout.png)
 
 ### Find CloudFormation Name
 1. Go to the CloudFormation console and write down the CloudFormation name that looks similar to mod-xxxxxxx36e49dc. You will need this to run an automation script later to set up RoboMaker IDE enviornment. 
