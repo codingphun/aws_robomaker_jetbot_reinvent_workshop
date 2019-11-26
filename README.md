@@ -77,6 +77,8 @@
     (docker)$ exit
     ```
 1. Open roboMakerSettings.json file located in root folder of the RoboMaker IDE. Look for s3Bucket and write down the name of the bucket, it will look similar to mod-47118164636e49dc-s3bucket-1t252d6l3fmil, you will need this for next step to upload the compiled and bundled ARM64 ROS application. Also find and write down the value in IOT_ENDPOINT, you will need it when deploying the application to the JetBot.
+![S3 and IoT Endpoint](assets/images/s3-iot-endpoint.png)
+
 1. Back in the RoboMaker IDE and navigate to the terminal. Make sure you exited out of the container in previous step
     ```
     # Make sure you exited out of the container in previous step
