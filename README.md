@@ -3,8 +3,8 @@
 ## Log in to AWS Console
 1. Browse to https://dashboard.eventengine.run/login, enter your assigned team hash and click "Accept Terms & Login"
 1. Click on "AWS Console" then "Open AWS Console"
-![EE Team Dashboard](https://robomakerworkshops.com/images/ee-team-dashboard.png)
-![EE AWS Console](https://robomakerworkshops.com/images/ee-open-console.png)
+![EE Team Dashboard](assets/images/ee-team-dashboard.png)
+![EE AWS Console](assets/images/ee-open-console.png)
 
 ## Create RoboMaker Notebook
 1. In the AWS RoboMaker console, select “Development environments” in the left panel and choose “Create environment”.
