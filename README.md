@@ -51,6 +51,7 @@
 
 1. Locate the teleop.zip file in **jetbot/assets/teleop** folder 
 ![teleop app](assets/images/teleop-app.png)
+
 1. Download the zip file in the file explorer and unzip it on the desktop
 1. Open the robogui.html file in a browser and make sure the connection status states Connected
 1. Use your mouse to move the joy stick and drive the Jetbot in Gazebo 
@@ -110,7 +111,7 @@ When a robot application is deployed to a physical robot, AWS RoboMaker does the
 1. Select the Robot software suite used by your robot application
     * Select *ROS Melodic*
 
-1. Provide the Amazon S3 path to your bundled robot application file in **ARM64 source file** field. Click Browse S3 and locate the tar file that you uploaded in previous step, s3://<S3-BUCKET-NAME>/jetbot/aarch64/output.tar.
+1. Provide the Amazon S3 path to your bundled robot application file in **ARM64 source file** field. Click Browse S3 and locate the tar file that you uploaded in previous step, s3://S3-BUCKET-NAME/jetbot/aarch64/output.tar.
 1. Click Create.
 
 
