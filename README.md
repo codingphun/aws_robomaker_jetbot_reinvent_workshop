@@ -18,7 +18,7 @@
     # change to the environment directory
     $ cd ~/environment
 
-    $ git clone URL jetbot
+    $ git clone https://github.com/codingphun/aws_robomaker_jetbot_reinvent_workshop.git jetbot
     ```
 
 ### Install Dependencies [~20 mins]
