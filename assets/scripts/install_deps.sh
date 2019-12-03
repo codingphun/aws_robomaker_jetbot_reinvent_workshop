@@ -117,9 +117,6 @@ sudo -u ubuntu rosdep update
 
 $(aws ecr get-login --no-include-email --registry-ids 593875212637 --region us-east-1)
 
-#Install Ubuntu dependencies for cross compilation:
-apt update &&  apt install -y qemu-user-static
-
 #Build Docker Container
 echo "Building docker image for robot ..."
 docker build -t jetbot-ros -f Dockerfile .
