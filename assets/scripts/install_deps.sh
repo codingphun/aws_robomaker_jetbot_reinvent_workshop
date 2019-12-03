@@ -51,7 +51,7 @@ sed -i "s/<Update IoT Endpoint Here>/$IOTENDPOINT/g" $ROBOMAKERFILE
 sed -i "s/<Update Public Subnet 1 Here>/$SUBNET1/g" $ROBOMAKERFILE
 sed -i "s/<Update Public Subnet 2 Here>/$SUBNET2/g" $ROBOMAKERFILE
 sed -i "s/<Update Security Group Here>/$SECURITY_GROUP/g" $ROBOMAKERFILE
-mv $ROBOMAKERFILE /home/ubuntu/environment
+cp $ROBOMAKERFILE /home/ubuntu/environment
 
 #Update awscreds.js
 echo "Updating awscreds.js ..."
@@ -117,8 +117,13 @@ sudo -u ubuntu rosdep update
 
 $(aws ecr get-login --no-include-email --registry-ids 593875212637 --region us-east-1)
 
-#Install Ubuntu dependencies for cross compilation:
-apt update &&  apt install -y qemu-user-static
+# Install Ubuntu dependencies for cross compilation:
+sudo apt-get update
+sudo apt-get install -y qemu-user-static
+if [ $? -ne 0 ]; then
+    echo "Failed to install QEMU. Please re-run this script."
+    exit 1
+fi
 
 #Build Docker Container
 echo "Building docker image for robot ..."
@@ -126,7 +131,3 @@ docker build -t jetbot-ros -f Dockerfile .
 
 #fix ros permissions
 rosdep fix-permissions
-
-
-
-
