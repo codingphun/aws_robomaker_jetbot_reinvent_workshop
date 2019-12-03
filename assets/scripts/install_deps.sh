@@ -118,10 +118,10 @@ sudo -u ubuntu rosdep update
 $(aws ecr get-login --no-include-email --registry-ids 593875212637 --region us-east-1)
 
 # Install Ubuntu dependencies for cross compilation:
-sudo apt-get update
-sudo apt-get install -y qemu-user-static
+apt-get update
+apt-get install -y qemu-user-static
 if [ $? -ne 0 ]; then
-    echo "Failed to install QEMU. Please re-run this script."
+    echo "Failed to install QEMU. Please wait for a few minutese and re-run this script."
     exit 1
 fi
 
