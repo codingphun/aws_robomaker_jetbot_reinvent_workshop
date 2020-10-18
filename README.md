@@ -6,6 +6,11 @@
 ![EE Team Dashboard](assets/images/ee-team-dashboard.png)
 ![EE AWS Console](assets/images/ee-open-console.png)
 
+
+## Launch a CloudFormation Stack to create your environment
+
+Ensure you are operating in US-East-1 and then [click here](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https://s3.amazonaws.com/assets.robomakerworkshops.com/cfn/bootstrap.rover.cfn.yaml&region=us-west-2).  Click "Next" to go to the "Specify Stack Details" page.  Enter a Stack name and then an s3BucketName at the bottom of the form.  Click "Next" again.  You can just accept the default stack options on the next page and click "Next" yet again.  Review your stack details and click the box at the bottom to "acknowledge that AWS CloudFormation might create IAM resources with custom names" and then finally "Create Stack."  Remember the stack name you assigned it - you will need that later.
+
 ## Create RoboMaker Notebook
 1. Open the AWS RoboMaker console at https://console.aws.amazon.com/robomaker/
 1. In the AWS RoboMaker console, select “Development environments” in the left panel and choose “Create environment”.
@@ -14,10 +19,6 @@
 
 ![Cloud9 IDE layout](https://robomakerworkshops.com/images/1_c9_layout.png)
 
-### Find CloudFormation Name
-1. Open the AWS CloudFormation console at https://console.aws.amazon.com/cloudformation/
-1. In CloudFormation console and write down the CloudFormation name that looks similar to mod-xxxxxxx36e49dc. You will need this to run an automation script later to set up RoboMaker IDE enviornment. 
-![cloudformation name](assets/images/cloudformation-name.png)
 
 ### Clone the Robot Application
 
