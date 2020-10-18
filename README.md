@@ -1,10 +1,15 @@
 ## Building a Robot Application with RoboMaker
 
+These steps are also documented at [RoboMakerWorkshops.com](https://robomakerworkshops.com/).
+
 ## Log in to AWS Console
 1. Browse to https://dashboard.eventengine.run/login, enter your assigned team hash and click "Accept Terms & Login"
 1. Click on "AWS Console" then "Open AWS Console"
 ![EE Team Dashboard](assets/images/ee-team-dashboard.png)
 ![EE AWS Console](assets/images/ee-open-console.png)
+
+For the purposes of this lab, you must use region US-East-1.  Please ensure you are set to that region for all steps in this lab.
+
 
 ## Create RoboMaker Notebook
 1. Open the AWS RoboMaker console at https://console.aws.amazon.com/robomaker/
