@@ -22,15 +22,24 @@ ROBOMAKERFILE="../../roboMakerSettings.json"
 AWSCREDSFILE="../teleop/awscreds.js"
 
 #Add cloudformation outputs as variables to use in the rest of this script
-for key in $(\
+CF=$(\
 aws cloudformation describe-stacks \
 --stack-name $PROJECTNAME \
 --query 'Stacks[].Outputs[?OutputKey==`SubmitJobSH`].[OutputValue]' \
 --output text
-) 
+)
+if [ $? -eq 0 ]
+then
+        echo "Cloud formation stack $PROJECTNAME found"
+else
+        echo "Cloud formation stack $PROJECTNAME not found - exiting"
+        exit 
+fi
+for key in $CF
 do
-    echo $key >> addrobomakerresources.sh
+        echo $key >> addrobomakerresources.sh
 done
+
 source addrobomakerresources.sh
 rm addrobomakerresources.sh
 
