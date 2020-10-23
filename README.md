@@ -43,11 +43,11 @@ For the purposes of this lab, you must use region US-East-1.  Please ensure you 
     # Run install_dep.sh to install prerequisite
     $ cd ~/environment/jetbot/assets/scripts
     
-    $ chmod +x compile_arm64.sh install_deps.sh 
-    
     # Be sure to replace the placeholder below with CloudFormation name that you capture in earlier step
     $ sudo ./install_deps.sh <your CloudFormation name>
-    
+	# note that the scripts should be executable.  If they are not do the following and repeat
+	# chmod +x *.sh
+   
     ```
 
 ### Run in Simulation and Explore [~30 mins]
