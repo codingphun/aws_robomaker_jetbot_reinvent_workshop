@@ -54,7 +54,7 @@ aws iot describe-endpoint \
 #Update roboMakerSettings file
 echo "Updating roboMakerSettings.json ..."
 sed -i "s/<Update S3 Bucketname Here>/$BUCKET_NAME/g" $ROBOMAKERFILE
-sed -i "s|<Update IAM Role ARN Here>|$ARN_SIM_ROLE|g" $ROBOMAKERFILE
+sed -i "s|<Update IAM Role ARN Here>|$ROLE_ARN|g" $ROBOMAKERFILE
 sed -i "s/<Update IoT Endpoint Here>/$IOTENDPOINT/g" $ROBOMAKERFILE
 sed -i "s/<Update Public Subnet 1 Here>/$SUBNET1/g" $ROBOMAKERFILE
 sed -i "s/<Update Public Subnet 2 Here>/$SUBNET2/g" $ROBOMAKERFILE
