@@ -9,7 +9,7 @@ These steps are also documented at [RoboMakerWorkshops.com](https://robomakerwor
 ![EE AWS Console](assets/images/ee-open-console.png)
 
 
-## Launch a CloudFormation Stack to create your environment
+## Launch a CloudFormation Stack to create your environment  
 
 Ensure you are operating in US-East-1 and then [click here](https://console.aws.amazon.com/cloudformation/home#/stacks/new?templateURL=https://s3.amazonaws.com/assets.robomakerworkshops.com/cfn/bootstrap.rover.cfn.yaml&region=us-west-2).  Click "Next" to go to the "Specify Stack Details" page.  Enter a Stack name and then an s3BucketName at the bottom of the form.  Click "Next" again.  You can just accept the default stack options on the next page and click "Next" yet again.  Review your stack details and click the box at the bottom to "acknowledge that AWS CloudFormation might create IAM resources with custom names" and then finally "Create Stack."  Remember the stack name you assigned it - you will need that later.
 
@@ -43,11 +43,11 @@ For the purposes of this lab, you must use region US-East-1.  Please ensure you 
     # Run install_dep.sh to install prerequisite
     $ cd ~/environment/jetbot/assets/scripts
     
-    $ chmod +x compile_arm64.sh install_deps.sh 
-    
     # Be sure to replace the placeholder below with CloudFormation name that you capture in earlier step
     $ sudo ./install_deps.sh <your CloudFormation name>
-    
+	# note that the scripts should be executable.  If they are not do the following and repeat
+	# chmod +x *.sh
+   
     ```
 
 ### Run in Simulation and Explore [~30 mins]
